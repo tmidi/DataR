@@ -1,5 +1,5 @@
 resource "aws_route53_zone" "test" {
-  name         = "test.com."
+  name = "test.com."
 }
 
 resource "aws_route53_record" "node1" {

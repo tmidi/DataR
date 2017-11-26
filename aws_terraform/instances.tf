@@ -40,13 +40,13 @@ resource "aws_instance" "mongodb_us-east-1a" {
     "${aws_security_group.mongodb_instances.id}",
   ]
 
-  subnet_id = "${aws_subnet.subnet-456.id}"
+  subnet_id                   = "${aws_subnet.subnet-456.id}"
   associate_public_ip_address = true
 
   ebs_block_device {
-    device_name = "/dev/sdf"
-    volume_size = 1000
-    volume_type = "standard"
+    device_name           = "/dev/sdf"
+    volume_size           = 1000
+    volume_type           = "standard"
     delete_on_termination = true
   }
 
@@ -65,13 +65,13 @@ resource "aws_instance" "mongodb_us-east-1b" {
     "${aws_security_group.mongodb_instances.id}",
   ]
 
-  subnet_id = "${aws_subnet.subnet-456.id}"
+  subnet_id                   = "${aws_subnet.subnet-456.id}"
   associate_public_ip_address = true
 
-    ebs_block_device {
-    device_name = "/dev/sdf"
-    volume_size = 1000
-    volume_type = "standard"
+  ebs_block_device {
+    device_name           = "/dev/sdf"
+    volume_size           = 1000
+    volume_type           = "standard"
     delete_on_termination = true
   }
 
@@ -90,13 +90,13 @@ resource "aws_instance" "mongodb_us-east-1c" {
     "${aws_security_group.mongodb_instances.id}",
   ]
 
-  subnet_id = "${aws_subnet.subnet-456.id}"
+  subnet_id                   = "${aws_subnet.subnet-456.id}"
   associate_public_ip_address = true
 
-    ebs_block_device {
-    device_name = "/dev/sdf"
-    volume_size = 1000
-    volume_type = "standard"
+  ebs_block_device {
+    device_name           = "/dev/sdf"
+    volume_size           = 1000
+    volume_type           = "standard"
     delete_on_termination = true
   }
 
