@@ -1,0 +1,12 @@
+- name: Create MongoDB persistant directory
+  file: /var/docker/MongoDB
+  state: directory
+  mode: 0755
+
+
+- name: Create a MongoDB container
+  docker_container:
+    name: docker_mongodb
+    image: mongo:3.4
+    volumes:
+      - /var/docker/MongoDB:/data/db

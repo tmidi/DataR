@@ -1,0 +1,16 @@
+---
+- include: setup-RedHat.yml
+
+- name: Install Docker.
+  package: name={{ docker_package }} state={{ docker_package_state }}
+
+- name: Ensure Docker is started and enabled at boot.
+  service:
+    name: docker
+    state: started
+    enabled: yes
+
+- include: docker-compose.yml
+  when: docker_install_compose
+
+- include: docker_image.yml
