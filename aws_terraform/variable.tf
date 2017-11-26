@@ -5,7 +5,8 @@ variable "region" {
 
 variable "subnet" {
   description = "Run the EC2 Instances in these Availability Zones"
-  type = "map"
+  type        = "map"
+
   default = {
     "us-east-1a" = "subnet-123"
     "us-east-1b" = "subnet-456"
@@ -15,14 +16,14 @@ variable "subnet" {
 
 variable "azs" {
   description = "Run the EC2 Instances in these Availability Zones"
-  type = "list"
-  default = ["us-east-1a", "us-east-1b", "us-east-1c",]
+  type        = "list"
+  default     = ["us-east-1a", "us-east-1b", "us-east-1c"]
 }
 
 variable "amazon_ami" {
   # ami-0987654 (Base AMI with Centos 7)
   description = "AWS AMI used for MongoDB instances"
-  default     = "ami-4af5022c"
+  default     = "ami-0987654"
 }
 
 variable "ssh_key_name" {
