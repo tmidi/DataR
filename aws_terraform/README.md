@@ -26,7 +26,7 @@ All of the interactions with Terraform are wrapped in a `Makefile`. It contains 
 |region|us-east-1| AWS Region provider|   Yes    |
 |azs|a,b and c in default region| Run instances in the provides zones|   Yes    |
 |amazon_ami|ami-0987654|AWS AMI to use with instances|   Yes    |
-||amazon_ami|Taleeb_Midi-Key|AWS key name to use for SSH|   Yes    ||ami-0987654|AWS AMI to use with instances|   Yes    |
+||amazon_ami|Taleeb_Midi-Key|AWS key name to use for SSH|   Yes    |
 |ssh_public_key|*public key*|AWS publicname to use for SSH|   Yes    |
 
 ### Howto
