@@ -10,3 +10,5 @@
     image: mongo:3.4
     volumes:
       - /var/docker/MongoDB:/data/db
+    ports:
+      - "27017:27017"
